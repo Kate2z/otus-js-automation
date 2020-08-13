@@ -16,8 +16,8 @@ tasks.add([`${tasksArray[getRandomInt(1,662)]}`]);
 Data(tasks).Scenario('test todomvc with params', (I, current) => {
     I.amOnPage('http://todomvc.com/examples/emberjs/');
     const {task} = current;
-    I.see('todos');
-    I.fillField('//input[@id="new-todo"]', task);
+    I.fillField('#new-todo', task);
     I.pressKey('Enter');
     I.waitForElement(`//label[contains(text(),"${task}")]`, 2);
+    I.seeElement("//span/strong[contains(text(),'1')]");
 });
