@@ -2,7 +2,7 @@ Feature('test todomvc with params');
 
 var fs = require("fs");
 const text = fs.readFileSync("./homework2/blns.txt").toString('utf-8');
-const tasksArray = text.split("\n",661);
+const tasksArray = text.split("\n",325);
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -11,7 +11,7 @@ function getRandomInt(min, max) {
 }
 
 const tasks = new DataTable(['task']);
-tasks.add([`${tasksArray[getRandomInt(1,662)]}`]);
+tasks.add([`${tasksArray[getRandomInt(1,326)]}`]);
 
 Data(tasks).Scenario('test todomvc with params', (I, current) => {
     I.amOnPage('http://todomvc.com/examples/emberjs/');

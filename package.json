@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "codeceptjs run"
+    "test:codecept": "codeceptjs run",
+    "test:jest": "jest"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/Kate2z/otus-js-automation#readme",
   "devDependencies": {
     "codeceptjs": "^2.6.7",
+    "jest": "^26.3.0",
     "puppeteer": "^5.2.1"
   }
 }
