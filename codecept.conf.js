@@ -5,13 +5,16 @@ const { setHeadlessWhen } = require('@codeceptjs/configure');
 setHeadlessWhen(process.env.HEADLESS);
 
 exports.config = {
-  tests: './homework3/*_test.js',
+  tests: './homework4/*_test.js',
   output: './output',
   helpers: {
     Puppeteer: {
       url: 'http://localhost',
-      show: true,
+      show: false,
       windowSize: ''
+    },
+    REST: {
+      endpoint: "",
     }
   },
   include: {

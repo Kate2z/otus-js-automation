@@ -22,5 +22,8 @@
     "codeceptjs": "^2.6.7",
     "jest": "^26.3.0",
     "puppeteer": "^5.2.1"
+  },
+  "dependencies": {
+    "ajv": "^6.12.5"
   }
 }
