@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:codecept": "codeceptjs run",
+    "test:codecept": "npx codeceptjs run",
     "test:jest": "jest"
   },
   "repository": {
@@ -24,6 +24,7 @@
     "puppeteer": "^5.2.1"
   },
   "dependencies": {
-    "ajv": "^6.12.5"
+    "ajv": "^6.12.5",
+    "faker": "^5.1.0"
   }
 }
