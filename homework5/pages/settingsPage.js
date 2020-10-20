@@ -21,6 +21,5 @@ module.exports = {
         I.fillField(this.fields.currentPass, oldPass);
         I.wait(3);
         I.click(this.buttons.save);
-        I.waitForText('The password was successfully updated.', 3);
     },
 }

@@ -1,5 +1,6 @@
 const { I } = inject();
 
+
 module.exports = {
     fields: {
         username:  '#username',
@@ -19,6 +20,6 @@ module.exports = {
         I.fillField(this.fields.password, pass);
         I.fillField(this.fields.passwordRetype, pass);
         I.click(this.buttons.submitRegister);
-        I.waitForText(`Hi ${name}!`, 5);
+
     },
 }

@@ -28,7 +28,9 @@ exports.config = {
   include: {
     I: './steps_file.js',
     registerFormPage: './homework5/pages/registerForm.js',
+    successRegister: './homework5/pages/successRegister.js',
     settingsPage: './homework5/pages/settingsPage.js',
+    successPassChange: './homework5/pages/successPassChange.js',
     loginFormPage: './homework5/pages/loginForm.js',
   },
   bootstrap: null,
