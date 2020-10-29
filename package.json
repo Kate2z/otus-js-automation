@@ -19,12 +19,17 @@
   },
   "homepage": "https://github.com/Kate2z/otus-js-automation#readme",
   "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
     "codeceptjs": "^2.6.7",
     "jest": "^26.3.0",
     "puppeteer": "^5.2.1"
   },
   "dependencies": {
     "ajv": "^6.12.5",
+    "chalk": "^4.1.0",
     "faker": "^5.1.0"
   }
 }
