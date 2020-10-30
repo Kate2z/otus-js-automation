@@ -1,11 +1,9 @@
 const { setHeadlessWhen } = require('@codeceptjs/configure');
 
-// turn on headless mode when running with HEADLESS=true environment variable
-// HEADLESS=true npx codecept run
 setHeadlessWhen(process.env.HEADLESS);
 
 exports.config = {
-  tests: './homework5/*_test.js',
+  tests: './homework6/*_test.js',
   output: './output',
   helpers: {
     Puppeteer: {
@@ -23,15 +21,16 @@ exports.config = {
     },
     REST: {
       endpoint: "",
-    }
+    },
   },
   include: {
     I: './steps_file.js',
-    registerFormPage: './homework5/pages/registerForm.js',
-    successRegister: './homework5/pages/successRegister.js',
-    settingsPage: './homework5/pages/settingsPage.js',
-    successPassChange: './homework5/pages/successPassChange.js',
-    loginFormPage: './homework5/pages/loginForm.js',
+    registerFormPage: './homework6/pages/registerPage.js',
+    personalMainPage: './homework6/pages/personalMainPage.js',
+    settingsPage: './homework6/pages/settingsPage.js',
+    loginFormPage: './homework6/pages/loginPage.js',
+    notificationFragment: './homework6/fragments/notification.js',
+
   },
   bootstrap: null,
   mocha: {},

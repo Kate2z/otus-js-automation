@@ -5,7 +5,7 @@ let assert = require('assert').strict;
 const userName = faker.name.firstName();
 const userEmail = faker.internet.email();
 const userPass = faker.internet.password();
-const newUserPass = faker.internet.password();
+let newUserPass = faker.internet.password();
 
 Feature('Tests with Page Obj');
 

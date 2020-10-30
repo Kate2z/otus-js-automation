@@ -34,6 +34,7 @@ module.exports = {
         I.waitForText('Create a new list', 3);
         I.fillField(this.fields.listName, nameOfList);
         I.click(this.buttons.createList);
+        I.wait(1);
     },
 
     addNewTask(nameOfList, nameOfTask) {

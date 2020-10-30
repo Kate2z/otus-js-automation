@@ -1,5 +1,6 @@
 /// <reference types='codeceptjs' />
 type steps_file = typeof import('./steps_file.js');
+type BrowserHelpers = import('./homework6/helpers/browser').BrowserHelpers;
 
 declare namespace CodeceptJS {
   interface SupportObject { I: CodeceptJS.I }
@@ -10,3 +11,5 @@ declare namespace CodeceptJS {
     interface Actions {}
   }
 }
+interface Methods extends CodeceptJS.Puppeteer {}
+interface I extends ReturnType<steps_file>, BrowserHelpers {}
