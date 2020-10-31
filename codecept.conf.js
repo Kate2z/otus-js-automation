@@ -39,6 +39,11 @@ exports.config = {
     retryFailedStep: {
       enabled: true
     },
+    testomat: {
+      enabled: true,
+      require: '@testomatio/reporter/lib/adapter/codecept',
+      apiKey: 'z629883f01tv',
+    },
     screenshotOnFail: {
       enabled: true
     }

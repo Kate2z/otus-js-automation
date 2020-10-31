@@ -28,6 +28,7 @@
     "puppeteer": "^5.2.1"
   },
   "dependencies": {
+    "@testomatio/reporter": "^0.1.16",
     "ajv": "^6.12.5",
     "chalk": "^4.1.0",
     "faker": "^5.1.0"

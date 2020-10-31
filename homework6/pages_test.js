@@ -7,7 +7,7 @@ const assert = require('assert').strict;
 const userData = BuildUser.getUser();
 const userTasks = BuildUser.getUserTasks();
 
-Feature('Tests with Page Obj');
+Feature('Tests with Page Obj upgrated');
 
 Before(async I => {
     I.amOnPage(BASE_URL);
