@@ -8,10 +8,15 @@ exports.config = {
   helpers: {
     Puppeteer: {
       url: 'http://localhost',
-      show: true,
+      show: false,
       windowSize: '',
       chrome: {
-        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+        args: [
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--lang=ru-RU,ru',
+            '--use-fake-ui-for-media-stream',
+        ],
         defaultViewport: {
           width: 1280,
           height: 960,
