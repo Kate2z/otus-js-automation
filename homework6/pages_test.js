@@ -27,17 +27,17 @@ Scenario('User change password', async (I) => {
     assert.equal(factPasswordNotif, SUCCESS_PASS_CHANGE_TEXT);
 });
 
-Scenario('Add new tasks list', async (I) => {
-    loginFormPage.userLogin(credential.userForLogin.username, credential.userForLogin.password);
-    personalMainPage.addNewList(userTasks.userList);
-    const factListNotif = await notificationFragment.getNotificationText();
-    assert.equal(factListNotif, SUCCESS_LIST_ADD_TEXT);
-
-});
-
-Scenario('Add new task', async (I) => {
-    loginFormPage.userLogin(credential.userForLogin.username, credential.userForLogin.password);
-    personalMainPage.addNewTask(userTasks.userList, userTasks.userTask);
-    I.waitForElement(personalMainPage.addedTask);
-});
+// Scenario.skip('Add new tasks list', async (I) => {
+//     loginFormPage.userLogin(credential.userForLogin.username, credential.userForLogin.password);
+//     personalMainPage.addNewList(userTasks.userList);
+//     const factListNotif = await notificationFragment.getNotificationText();
+//     assert.equal(factListNotif, SUCCESS_LIST_ADD_TEXT);
+//
+// });
+//
+// Scenario.only('Add new task', async (I) => {
+//     loginFormPage.userLogin(credential.userForLogin.username, credential.userForLogin.password);
+//     personalMainPage.addNewTask(userTasks.userList, userTasks.userTask);
+//     I.waitForElement(personalMainPage.addedTask);
+// });
 
