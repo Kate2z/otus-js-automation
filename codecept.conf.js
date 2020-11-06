@@ -16,12 +16,13 @@ exports.config = {
             '--disable-setuid-sandbox',
             '--lang=ru-RU,ru',
             '--use-fake-ui-for-media-stream',
+            '--enable-logging',
+            '--v=1',
         ],
         defaultViewport: {
           width: 1280,
           height: 960,
         },
-        executablePath: process.env.CHROMIUM_PATH,
       },
     },
     REST: {
