@@ -24,13 +24,13 @@
     "@babel/node": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
     "codeceptjs": "^2.6.7",
-    "jest": "^26.3.0",
-    "puppeteer": "^5.2.1"
+    "jest": "^26.3.0"
   },
   "dependencies": {
     "@testomatio/reporter": "^0.1.16",
     "ajv": "^6.12.5",
     "chalk": "^4.1.0",
-    "faker": "^5.1.0"
+    "faker": "^5.1.0",
+    "puppeteer": "^5.2.1"
   }
 }
